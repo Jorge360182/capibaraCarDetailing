@@ -895,11 +895,6 @@ footer {
         overflow: hidden;
     }
     
-    .image-container img {
-        width: 100%;
-        height: auto;
-    }
-    
     .image-container .description {
         position: absolute;
         bottom: 20px 0;
