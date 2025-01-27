@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/logo/red3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('red3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -82,7 +82,7 @@ header img {
 
 /* Ocultar menú en pantallas pequeñas */
 #navbar ul {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('/assets/images/logo/red3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('red3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 1px solid #ae0000;
@@ -482,7 +482,7 @@ p:not(.excluido-p)  {
     line-height: 1.5; /* Espaciado entre líneas */
     color: #e3e4e5; 
     text-align: justify; 
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/logo/red.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('red.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -834,16 +834,16 @@ footer {
 
     .rotative-container {
         position: relative;
-        display: flex;
-        width: 370px; /* Tamaño fijo del contenedor */
-        height: 290px; /* Ajusta el tamaño según tus imágenes */
-        margin: 0 auto; /* Centra horizontalmente */
+        display:flex;
+        width: 100%; /* Tamaño fijo del contenedor */
+        height: 270px; /* Ajusta el tamaño según tus imágenes */
+        margin-left:  auto; /* Centra horizontalmente */
+        margin-right: auto; /* Centra horizontalmente */
         overflow: hidden;
-        
         align-items: center;
         border-radius: 5px;
     }
-
+    
     .rotative img {
         width: 100%; /* Tamaño fijo del contenedor */
         height: 100%; /* Ajusta el tamaño según tus imágenes */
@@ -877,6 +877,10 @@ footer {
     .rotative-next {
         right: 2px;
     }
+
+
+
+
 
     .carousel {
         position: relative;
