@@ -2,17 +2,17 @@
   {
       "id": 1,
       "images": [
-          "/assets/images/venta/image8.jpg",
-          "/assets/images/venta/image9.jpg",
-          "/assets/images/venta/image10.jpg"
+          "image8.jpg",
+          "image9.jpg",
+          "image10.jpg"
       ],
       "description": "Auto rojo con motor V8 y asientos de piel. Precio: $500,000 MXN."
   },
   {
       "id": 2,
       "images": [
-          "/assets/images/venta/image10-1.jpg",
-          "/assets/images/venta/image12.jpg"
+          "image10-1.jpg",
+          "image12.jpg"
       ],
       "description": "Bocho negro con interiores de lujo. Perfecta para la familia. Precio: $400,000 MXN"
   }
