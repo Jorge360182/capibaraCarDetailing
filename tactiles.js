@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         // Cargar datos desde el archivo JSON
-        const response = await fetch('/assets/data/autos.json');
+        const response = await fetch('autos.json');
         const autos = await response.json();
 
         // Generar dinámicamente las tarjetas
