@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const container = document.getElementById('autos-container');
 
     try {
-        const response = await fetch('/assets/data/autos.json');
+        const response = await fetch('autos.json');
         const autos = await response.json();
 
         autos.forEach((auto) => {
