@@ -173,16 +173,19 @@ header img {
 /* Línea superior */
 #hamburger::before {
     top: 0;
+    left: 10px;
 }
 
 /* Línea inferior */
 #hamburger::after {
     bottom: 0;
+    left: 10px;
 }
 
 /* Línea media */
 #hamburger span {
     top: 10px;
+    left: 10px;
 }
 
 /* Estilo cuando el menú está abierto */
