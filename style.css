@@ -302,7 +302,7 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
+ 
 
 
 /* .gallery ventas--------------------------------------------------.gallery ventas------------------------------ */
@@ -318,29 +318,34 @@ section {
     height: 450px;
     object-fit: cover;
     scroll-snap-align: center; /* Centrar al desplazarse */
-    transition: transform 0.3s ease;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 45px;
     align-content:space-around;
-}
-
-.gallery img {
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out; /* Transición suave al hacer zoom */
 }
 
 .image-gallery {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto; /* Habilitar desplazamiento horizontal */
+    overflow: hidden;
     gap: 10px;
     scroll-snap-type: x mandatory; /* Habilitar alineación automática */
     padding-bottom: 10px;
+    position: relative; 
+}
+
+.image-gallery .gallery-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out; /* Transición suave */
+}
+
+.gallery-img {
+
+    object-fit: cover;
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
 }
 
 
@@ -365,6 +370,42 @@ section {
 
 .description-btn {
     display: none;
+}
+
+
+
+
+/* .venta-prev y .venta-next ------------------------ ----.venta-prev y .venta-next-------------------------------- */
+.venta-prev,
+.venta-next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.345);
+    color: white;
+    border: none;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.venta-prev {
+    left: 5px;
+}
+
+.venta-next {
+    right: 5px;
+}
+
+.venta-prev:hover,
+.venta-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -412,6 +453,29 @@ section {
 
 
 
+/* .gallery-tres-d img ------------------------------------.gallery-tres-d img------------------------------------- */
+.gallery-tres-d {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.gallery-tres-d img {
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-tres-d img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
 /* formulario ----------------------------------------------formulario--------------------------------------------- */
 form {
     display: flex;
@@ -445,6 +509,7 @@ form button:hover {
 #sales-form .send {
     align-self: center;
 }
+
 
 
 
@@ -538,7 +603,7 @@ p:not(.excluido-p)  {
     line-height: 1.5; /* Espaciado entre líneas */
     color: #e3e4e5; 
     text-align: justify; 
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('red.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/logo/red.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -752,7 +817,7 @@ footer {
 .image-gallery {
        display: flex;
        flex-wrap: nowrap;
-       overflow-x: auto; /* Habilitar desplazamiento horizontal */
+       /* overflow-x: auto;  */
        gap: 10px;
        scroll-snap-type: x mandatory; /* Habilitar alineación automática */
        padding-bottom: 10px;
@@ -814,12 +879,12 @@ footer {
     .image-container {
         position: relative;
         overflow: hidden;
-        width: 450px; /* Ajusta según tu diseño */
+        width: 490px; /* Ajusta según tu diseño */
         height: 430px; /* Ajusta según tu diseño */
     }
     
     .image-gallery img {
-        width: 450px; /* Ajusta el tamaño según diseño */
+        width: 490px; /* Ajusta el tamaño según diseño */
         height: 370px;
         object-fit: cover;
         scroll-snap-align: center; /* Centrar al desplazarse */
@@ -842,7 +907,6 @@ footer {
     .image-gallery {
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: auto; /* Habilitar desplazamiento horizontal */
         gap: 10px;
         scroll-snap-type: x mandatory; /* Habilitar alineación automática */
         padding-bottom: 10px;
@@ -855,9 +919,12 @@ footer {
     }
 
     p:not(.excluido-p)  {
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: auto;
+        padding-right: auto;
+        padding-left: 1%;
+        padding-right: 1%;
         font-size: 18px;
+        text-align: justify;
     }
 
     .excluido-p {
@@ -869,18 +936,18 @@ footer {
     .rotative-container {
         position: relative;
         display:flex;
-        width: 100%; /* Tamaño fijo del contenedor */
-        height: 270px; /* Ajusta el tamaño según tus imágenes */
+        width: 350px; /* Tamaño fijo del contenedor */
+        height: 268px; /* Ajusta el tamaño según tus imágenes */
         margin-left:  auto; /* Centra horizontalmente */
         margin-right: auto; /* Centra horizontalmente */
         overflow: hidden;
         align-items: center;
-        border-radius: 5px;
+        border-radius: 1px;
     }
     
     .rotative img {
-        width: 100%; /* Tamaño fijo del contenedor */
-        height: 100%; /* Ajusta el tamaño según tus imágenes */
+        width: 350px; /* Tamaño fijo del contenedor */
+        height: 268px; /* Ajusta el tamaño según tus imágenes */
         object-fit: cover;
         flex-shrink: 0;
     }
@@ -951,6 +1018,22 @@ footer {
         font-size: 15px;
         bottom: 60px;
        }
+
+       .gallery-tres-d {
+        gap: 20px;
+    }
+    
+    .gallery-tres-d img {
+        width: 340px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 3px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .gallery-tres-d img:hover {
+        transform: scale(1.1);
+    }
 }
 
 
@@ -979,7 +1062,7 @@ footer {
         text-align: justify;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
+        transition: opacity 0.5s ease;
     }
     
     .image-container.show-description .description {
@@ -1048,5 +1131,10 @@ footer {
 
     .description {
         bottom: 0;
+    }
+
+    .venta-prev,
+    .venta-next {
+        display: none;
     }
 }
