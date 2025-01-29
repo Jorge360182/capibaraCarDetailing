@@ -27,7 +27,7 @@ document.getElementById('sales-form').addEventListener('submit', function(event)
 });
 
 // Formulario de Impresión 3D
-document.getElementById('3d-form').addEventListener('submit', function(event) {
+document.getElementById('tres-d-form').addEventListener('submit', function(event) {
     event.preventDefault();
     alert('Gracias por tu solicitud de impresión 3D. Te contactaremos para más detalles.');
 });
