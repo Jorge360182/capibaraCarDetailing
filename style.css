@@ -606,7 +606,7 @@ p:not(.excluido-p)  {
     line-height: 1.5; /* Espaciado entre líneas */
     color: #e3e4e5; 
     text-align: justify; 
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('red.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('red.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
