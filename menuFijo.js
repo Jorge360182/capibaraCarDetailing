@@ -20,7 +20,7 @@
             isFixed = false;
         }
 
-        if (currentScrollPos > prevScrollPos && isFixed) {
+        if (currentScrollPos >= prevScrollPos && isFixed) {
             navbar.classList.remove('open');
             navbar.classList.add('navbar-hidden');
             hamburger.classList.remove('open');
