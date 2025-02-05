@@ -74,7 +74,8 @@ header img {
 
 #navbar button {
     font-size: 1.3rem;
-    margin: .7rem;                       
+    margin: .7rem;
+    margin-right: .100rem; 
     border: none;
     cursor: pointer;
     z-index: 200;
@@ -173,19 +174,16 @@ header img {
 /* Línea superior */
 #hamburger::before {
     top: 0;
-    left: 10px;
 }
 
 /* Línea inferior */
 #hamburger::after {
     bottom: 0;
-    left: 10px;
 }
 
 /* Línea media */
 #hamburger span {
     top: 10px;
-    left: 10px;
 }
 
 /* Estilo cuando el menú está abierto */
@@ -1014,7 +1012,7 @@ footer {
     }
 
     #navbar div a {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .description {
