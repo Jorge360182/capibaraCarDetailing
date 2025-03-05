@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('red3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/logo/red3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden; /* Evita scroll horizontal */
 }
 
 
@@ -73,8 +74,8 @@ header img {
 
 #navbar button {
     font-size: 1.3rem;
-    margin: .7rem;
-    margin-right: .100rem; 
+    margin: .7rem;  
+    margin-right: .100rem;                     
     border: none;
     cursor: pointer;
     z-index: 200;
@@ -82,7 +83,7 @@ header img {
 
 /* Ocultar menú en pantallas pequeñas */
 #navbar ul {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('red3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('/assets/images/logo/red3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 1px solid #ae0000;
@@ -173,16 +174,19 @@ header img {
 /* Línea superior */
 #hamburger::before {
     top: 0;
+    /* left: 8px; */
 }
 
 /* Línea inferior */
 #hamburger::after {
     bottom: 0;
+    /* left: 8px; */
 }
 
 /* Línea media */
 #hamburger span {
     top: 10px;
+    /* left: 8px; */
 }
 
 /* Estilo cuando el menú está abierto */
@@ -207,7 +211,7 @@ header img {
 .carousel {
     position: relative;
     width: 100%;
-    height: 75vh; /* Ocupa toda la altura de la pantalla */
+    height: 50vh; /* Ocupa toda la altura de la pantalla */
     overflow: hidden; /* Oculta imágenes fuera del área visible */
 }
 
@@ -216,7 +220,7 @@ header img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70vh; /* La imagen ocupa toda la altura de la pantalla */
+    height: 50vh; /* La imagen ocupa toda la altura de la pantalla */
     object-fit: cover; /* Asegura que la imagen se adapte sin distorsión */
     opacity: 0; /* Por defecto, todas las imágenes son invisibles */
     transition: opacity 1s ease-in-out; /* Transición suave al cambiar */
@@ -603,7 +607,7 @@ p:not(.excluido-p)  {
     line-height: 1.5; /* Espaciado entre líneas */
     color: #e3e4e5; 
     text-align: justify; 
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('red.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/assets/images/logo/red.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -912,7 +916,7 @@ footer {
         padding-bottom: 10px;
     }
 
-    li:not(.Menu-main li) {
+    /* li:not(.Menu-main li) {
         margin-left: 1px;
         margin-right: 1px;
         font-size: 12px;
@@ -932,7 +936,7 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
         font-size: 16px;
-    }
+    } */
 
     .rotative-container {
         position: relative;
@@ -1000,7 +1004,7 @@ footer {
         height: 100%;
     }
 
-    h1 {
+    /* h1 {
         font-size: 25px;
     }
 
@@ -1008,7 +1012,7 @@ footer {
         font-size: 15px;
         margin: 5px 5px;
         margin-top: 30px;
-    }
+    } */
 
     #navbar div a {
         font-size: 20px;
@@ -1018,9 +1022,9 @@ footer {
         line-height: 1.4;
         font-size: 15px;
         bottom: 60px;
-       }
+    }
 
-       .gallery-tres-d {
+    .gallery-tres-d {
         gap: 20px;
     }
     
@@ -1037,7 +1041,7 @@ footer {
     }
 
     section {
-    padding: 2px;
+        padding: 2px;
     }
 }
 
@@ -1135,7 +1139,7 @@ footer {
     }
 
     .description {
-        bottom: 0;
+        bottom: 0px;
     }
 
     .venta-prev,
@@ -1161,5 +1165,43 @@ footer {
         transition: opacity 1s ease-in-out; /* Transición suave al cambiar */
         width: 100%;
         height: 100%;
+    }
+}
+
+
+
+
+@media (pointer: coarse) and (max-width: 815px){
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin: 5px 5px;
+        margin-top: 30px;
+    }
+
+    li:not(.Menu-main li) {
+        margin-left: 1px;
+        margin-right: 1px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    p:not(.excluido-p)  {
+        padding-left: auto;
+        padding-right: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .excluido-p {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 16px;
     }
 }
