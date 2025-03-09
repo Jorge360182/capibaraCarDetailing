@@ -2,19 +2,9 @@
   {
       "id": 1,
       "images": [
-          "image8.jpg",
-          "image9.jpg",
-          "image10.jpg"
+          "/assets/images/venta/image0.jpg",
+          "/assets/images/venta/image1.jpg"
       ],
-      "description": "Auto rojo con motor V8 y asientos de piel. Precio: $500,000 MXN."
-  },
-  
-  {
-      "id": 2,
-      "images": [
-          "image10-1.jpg",
-          "image10-2.jpg"
-      ],
-      "description": "Bocho negro con interiores de lujo. Perfecta para la familia. Precio: $400,000 MXN"
+      "description": "Kawasaki Vulcan Nomada 1500cc, 2001 legalizada, con titulo y pedimento, todo pagado, $79,000mxn o posible cambio."
   }
 ]
