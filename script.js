@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Inicializar mostrando la primera imagen
     images[currentIndex].classList.add("active");
 
-    // Cambiar imagen cada 5 segundos
-    setInterval(changeImage, 5000);
+    // Cambiar imagen cada 3 segundos
+    setInterval(changeImage, 3000);
 });
 
 
