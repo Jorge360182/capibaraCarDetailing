@@ -10,65 +10,74 @@
 
 
 
-// Seleccionar elementos del carrusel
-const rotative = document.querySelector('.rotative');
-const rotativeImages = document.querySelectorAll('.rotative img');
-const rotativePrev = document.querySelector('.rotative-prev');
-const rotativeNext = document.querySelector('.rotative-next');
 
-let currentRotativeIndex = 0; // Índice de la imagen visible en el carrusel
+// Seleccionar todos los contenedores de imágenes rotativas
+const rotativeContainers = document.querySelectorAll('.rotative-container');
 
-// Actualiza la posición del carrusel
-function updateRotative() {
-    const imageWidth = rotativeImages[0].clientWidth; // Ancho real de una imagen
-    const offset = -currentRotativeIndex * imageWidth;
-    rotative.style.transform = `translateX(${offset}px)`;
-}
+// Iterar sobre cada contenedor de imágenes rotativas
+rotativeContainers.forEach((container) => {
+    const rotative = container.querySelector('.rotative');
+    const rotativeImages = container.querySelectorAll('.rotative img');
+    const rotativePrev = container.querySelector('.rotative-prev');
+    const rotativeNext = container.querySelector('.rotative-next');
 
-// Evento para el botón "anterior"
-rotativePrev.addEventListener('click', () => {
-    currentRotativeIndex = (currentRotativeIndex > 0) 
-        ? currentRotativeIndex - 1 
-        : rotativeImages.length - 1; // Regresa al final si está en la primera imagen
-    updateRotative();
-});
+    let currentRotativeIndex = 0; // Índice de la imagen visible en las imágenes rotativas
 
-// Evento para el botón "siguiente"
-rotativeNext.addEventListener('click', () => {
-    currentRotativeIndex = (currentRotativeIndex < rotativeImages.length - 1) 
-        ? currentRotativeIndex + 1 
-        : 0; // Vuelve al inicio si está en la última imagen
-    updateRotative();
-});
+    // Actualiza la posición de las imágenes rotativas
+    function updateRotative() {
+        const imageWidth = rotativeImages[0].clientWidth; // Ancho real de una imagen
+        const offset = -currentRotativeIndex * imageWidth;
+        rotative.style.transform = `translateX(${offset}px)`;
+    }
 
-//  Soporte táctil SOLO en dispositivos móviles
-if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    rotative.addEventListener('touchstart', (e) => {
-        touchStartX = e.touches[0].clientX;
-    });
-
-    rotative.addEventListener('touchmove', (e) => {
-        touchEndX = e.touches[0].clientX;
-    });
-
-    rotative.addEventListener('touchend', () => {
-        let swipeDistance = touchEndX - touchStartX;
-
-        if (swipeDistance > 50) {
-            // Deslizar a la derecha (imagen anterior)
-            currentRotativeIndex = (currentRotativeIndex > 0) 
-                ? currentRotativeIndex - 1 
-                : rotativeImages.length - 1;
-        } else if (swipeDistance < -50) {
-            // Deslizar a la izquierda (imagen siguiente)
-            currentRotativeIndex = (currentRotativeIndex < rotativeImages.length - 1) 
-                ? currentRotativeIndex + 1 
-                : 0;
-        }
-
+    // Evento para el botón "anterior"
+    rotativePrev.addEventListener('click', () => {
+        currentRotativeIndex = (currentRotativeIndex > 0)
+            ? currentRotativeIndex - 1
+            : rotativeImages.length - 1; // Regresa al final si está en la primera imagen
         updateRotative();
     });
-}
+
+    // Evento para el botón "siguiente"
+    rotativeNext.addEventListener('click', () => {
+        currentRotativeIndex = (currentRotativeIndex < rotativeImages.length - 1)
+            ? currentRotativeIndex + 1
+            : 0; // Vuelve al inicio si está en la última imagen
+        updateRotative();
+    });
+
+    // Soporte táctil SOLO en dispositivos móviles
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        rotative.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        rotative.addEventListener('touchmove', (e) => {
+            touchEndX = e.touches[0].clientX;
+        });
+
+        rotative.addEventListener('touchend', () => {
+            let swipeDistance = touchEndX - touchStartX;
+
+            if (swipeDistance > 50) {
+                // Deslizar a la derecha (imagen anterior)
+                currentRotativeIndex = (currentRotativeIndex > 0)
+                    ? currentRotativeIndex - 1
+                    : rotativeImages.length - 1;
+            } else if (swipeDistance < -50) {
+                // Deslizar a la izquierda (imagen siguiente)
+                currentRotativeIndex = (currentRotativeIndex < rotativeImages.length - 1)
+                    ? currentRotativeIndex + 1
+                    : 0;
+            }
+
+            updateRotative();
+        });
+    }
+
+    // Inicializar la posición del carrusel
+    updateRotative();
+});
