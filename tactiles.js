@@ -8,13 +8,20 @@ if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
     });
 }
 
+
 // Cargar imágenes dinámicas
 document.addEventListener('DOMContentLoaded', async () => {
     const container = document.getElementById('autos-container');
 
     try {
-        const response = await fetch('autos.json');
+        const response = await fetch('/assets/data/autos.json');
         const autos = await response.json();
+
+        if (autos.length === 0) {
+            // Si no hay autos, mostrar el mensaje
+            container.innerHTML = '<p class="no-autos-msg">Próximamente tendremos más autos en venta</p>';
+            return;
+        }
 
         autos.forEach((auto) => {
             const card = document.createElement('div');
@@ -80,9 +87,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (error) {
         console.error('Error al cargar los datos:', error);
-        container.innerHTML = '<p>Error al cargar los autos. Intenta más tarde.</p>';
+        container.innerHTML = '<p class="no-autos-msg">Error al cargar los autos. Intenta más tarde.</p>';
     }
 });
+
 
 // Función para actualizar la imagen con desplazamiento suave
 function updateGalleryIndex(track, direction) {
