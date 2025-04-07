@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (autos.length === 0) {
             // Si no hay autos, mostrar el mensaje
-            container.innerHTML = '<p class="no-autos-msg">Próximamente tendremos más autos en venta</p>';
+            container.innerHTML = '<p class="no-autos-msg">"Próximamente integraremos mas vehículos seleccionados. Si desea información prioritaria sobre modelos, financiamiento o intercambio, contáctenos con gusto le atenderemos!."</p>';
+                                   
             return;
         }
 
