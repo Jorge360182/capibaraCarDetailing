@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/logo/gray.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('gray.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -83,7 +83,7 @@ header img {
 
 /* Ocultar menú en pantallas pequeñas */
 #navbar ul {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('/assets/images/logo/exagonal.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('exagonal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 1px solid #0077ae;
@@ -608,7 +608,7 @@ p:not(.excluido-p)  {
     line-height: 1.5; /* Espaciado entre líneas */
     color: #e3e4e5; 
     text-align: justify; 
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/logo/exagonal.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('exagonal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
