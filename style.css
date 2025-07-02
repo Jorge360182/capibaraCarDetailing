@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('red3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/logo/gray.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,7 +58,7 @@ header img {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center; /* Asegura alineación */
-    border-top: 3px solid #ae0000;
+    border-top: 3px solid #005aae;
 }
 
 #navbar div a {
@@ -83,10 +83,10 @@ header img {
 
 /* Ocultar menú en pantallas pequeñas */
 #navbar ul {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('red3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('/assets/images/logo/exagonal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 1px solid #ae0000;
+    border-top: 1px solid #0077ae;
     padding: 0;
     margin: 0;
     max-height: 0;
@@ -117,7 +117,8 @@ header img {
 
 #navbar ul a:hover,
 #navbar ul a:focus {
-    background-color: #9300009c;
+    background-color: #0069939c;
+    border-radius: 5px;
 }
 
 .navbar-fixed {
@@ -132,8 +133,8 @@ header img {
 }
 
 #navbar {
-    background-color: rgb(77, 1, 1);
-    box-shadow: 0px 0px 5px 1px rgb(240, 1, 1);
+    background-color: rgb(1, 55, 77);
+    box-shadow: 0px 0px 5px 1px #005aae;
     transition: transform 0.3s ease;
 }
 
@@ -561,15 +562,15 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    background-color: #490000d9;
+    background-color: #00233ad9;
     text-transform: uppercase;
     color: #DCDCDC;
     text-align: center; 
     margin: 20px 16px;
     letter-spacing: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-    border-left: 5px solid #ff0000; 
-    border-right: 5px solid #ff0000; 
+    border-left: 5px solid #0085c2; 
+    border-right: 5px solid #0085c2; 
     padding-left: 15px; /* Espacio para la línea */
     border-radius: 10px;
     padding: 10px;
@@ -607,12 +608,13 @@ p:not(.excluido-p)  {
     line-height: 1.5; /* Espaciado entre líneas */
     color: #e3e4e5; 
     text-align: justify; 
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('red.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/logo/exagonal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 1); 
+    border-radius: 20px;
     /* text-wrap: balance; */
 }
 
@@ -640,13 +642,13 @@ li:not(.Menu-main li) {
     transition: transform 0.4s ease, background-color 0.2s ease; 
     font-family: 'Arial', sans-serif; 
     font-size: 20px;
-    color: #dcdcfa; 
+    color: #ffffff; 
     line-height: 1.3;
 }
 
 li:hover:not(.Menu-main li) {
     transform: scale(1.05); /* Efecto de zoom */
-    color: rgb(179, 41, 84); /* Color del texto en hover */
+    color: rgb(111, 193, 231); /* Color del texto en hover */
     transition: 0.2s ease-in-out;
 }
 
@@ -690,7 +692,7 @@ h4 {
 
 
 
-/* .no-autos-msg ---------------------------------------------.no-autos-msg---------------------------------------- */
+/* .no-autos-msg ---------------------------------------------.no-autos-msg----------------------------------------- */
 .no-autos-msg {
     text-align: center;
     font-size: 1.5rem;
@@ -704,9 +706,9 @@ h4 {
 
 
 
-/* footer -------------------------------------------------footer-------------------------------------------------- */
+/* footer -------------------------------------------------footer--------------------------------------------------- */
 footer {
-    background-color: #ff0000;
+    background-color: #004f74;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -730,7 +732,7 @@ footer {
         justify-content: space-around;
         padding: 0;
         border: none;
-        border-bottom: 3px solid #ae0000;
+        border-bottom: 3px solid #005aae;
     }
 
     #navbar li {
@@ -857,7 +859,7 @@ footer {
         justify-content: center; /* Centra el texto */
         align-items: center;
         padding: 0;
-        border-top: 1.5px solid #ae0000;
+        border-top: 1.5px solid #0068ae;
     }
 
     #hamburger {
