@@ -1240,7 +1240,6 @@ footer {
 
     li:hover:not(.Menu-main li) {
         transform: none; /* Efecto de zoom */
-        color: rgb(111, 193, 231); /* Color del texto en hover */
-        transition: 0.2s ease-in-out 2s;
+        color: white; /* Color del texto en hover */
     }
 }
