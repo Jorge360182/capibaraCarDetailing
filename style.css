@@ -607,7 +607,7 @@ p:not(.excluido-p)  {
     padding-left: 50px;
     padding-right: 50px;
     line-height: 1.5; /* Espaciado entre líneas */
-    color: #e3e4e5; 
+    color: white; 
     text-align: justify; 
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('1.jpg');
     background-repeat: no-repeat;
