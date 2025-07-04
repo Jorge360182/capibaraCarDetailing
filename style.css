@@ -720,25 +720,35 @@ footer {
 }
 
 #social-media {
-    display: flex;          
-    justify-content: center; 
-    align-items: center;    
-    gap: 20px;              
-    flex-wrap: wrap;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio horizontal entre elementos */
 }
 
 #social-media a {
-    display: flex;          
-    flex-direction: column; 
-    align-items: center;   
-    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 0; /* Elimina espacio adicional entre icono y texto */
 }
 
 #social-media .social {
     background: none;
     box-shadow: none;
-    color: white;  
-    font-size: 18px;        
+    margin: 2px 0 0 0; /* Reduce este valor para menos espacio */
+    padding: 0; /* Asegura que no hay padding adicional */
+    color: white;
+    font-size: 14px; /* Texto más compacto */
+    line-height: 1; /* Reduce espacio entre líneas */
+    margin-bottom: 20px;
+}
+
+#social-media img {
+    width: 60px; /* Iconos un poco más pequeños */
+    height: 60px;
+    margin-bottom: 2px; /* Controla espacio debajo del icono */
 }
 
 
