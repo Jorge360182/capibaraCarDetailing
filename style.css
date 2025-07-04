@@ -686,8 +686,8 @@ li::before:not(.Menu-main li) {
 /* h4 -------------------------------------------------------------h4---------------------------------------------- */
 h4 {
     color: white;
-    background-color: black;
     padding: 5px;
+    font-size: 22px;
 }
 
 
@@ -1242,5 +1242,12 @@ footer {
     li:hover:not(.Menu-main li) {
     transform: none; /* Efecto de zoom */
     color: white; /* Color del texto en hover */
+   }
+
+    h4 {
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 20px;
    }
 }
