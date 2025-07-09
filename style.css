@@ -754,9 +754,10 @@ footer {
 
 hr {
     border: none;
-    height: 2px;
+    height: 4px;
     background-color: #feffff;
     margin: 20px 0; /* Espacio vertical alrededor del hr */
+    border-radius: 50%;
 }
 
 
