@@ -752,6 +752,13 @@ footer {
 }
 
 
+hr {
+    border: none;
+    height: 2px;
+    background-color: #feffff;
+    margin: 20px 0; /* Espacio vertical alrededor del hr */
+}
+
 
 
 /* adaptavilidad --------------------------------------------------------------------------------------------- */
