@@ -253,7 +253,11 @@ section {
     overflow: hidden;
     display: flex;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    z-index: 1; /* Asegura que el carrusel esté sobre el fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .rotative-wrapper {
@@ -1267,6 +1271,9 @@ hr {
         overflow: hidden;
         align-items: center;
         border-radius: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
     .rotative img {
