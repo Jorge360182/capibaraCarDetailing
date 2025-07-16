@@ -84,7 +84,7 @@ header img {
 
 /* Ocultar menú en pantallas pequeñas */
 #navbar ul {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('red3.2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('red3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 1px solid #ae0000;
